@@ -1,0 +1,8 @@
+type Table @entity {
+  id: ID!
+  owner: Bytes!
+  tableId: BigInt!
+  name: String!
+  statement: String!
+  tokenURI: String!
+}

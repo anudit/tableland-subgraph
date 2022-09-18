@@ -1,0 +1,24 @@
+specVersion: 0.0.2
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: TablelandTables
+    network: mumbai
+    source:
+      address: "0x4b48841d4b32c4650e4abc117a03fe8b51f38f68"
+      abi: TablelandTables
+      startBlock: 27046666
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - Table
+      abis:
+        - name: TablelandTables
+          file: ./abis/TablelandTables.json
+      eventHandlers:
+        - event: CreateTable(address,uint256,string)
+          handler: handleCreateTable
+      file: ./src/mapping.ts
