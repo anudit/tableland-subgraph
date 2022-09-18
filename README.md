@@ -1,6 +1,6 @@
 # Tableland Subgraph
 
-Build completed: QmRTGWBYhGvbCKUBqMySA7ZkPK3ox7CM2xDesMpdqWieQX
+Build completed: QmTAdLqQ866unE39TkGkP2Nmuwaw9HamMkHcjiyNniBcoc
 
 Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland
 
