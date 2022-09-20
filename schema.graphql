@@ -5,4 +5,5 @@ type Table @entity {
   name: String!
   statement: String!
   tokenURI: String!
+  created: BigInt!
 }

@@ -15,6 +15,7 @@ export function handleCreateTable(event: CreateTable): void {
   entity.tableId = event.params.tableId;
   entity.statement = event.params.statement;
   entity.name = event.params.statement.split(' ')[2].concat(`_${event.params.tableId}`);
+  entity.created = event.block.timestamp;
 
   let contract = TablelandTables.bind(event.address);
   entity.tokenURI = contract.tokenURI(event.params.tableId);

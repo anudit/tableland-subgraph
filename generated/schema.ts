@@ -21,6 +21,7 @@ export class Table extends Entity {
     this.set("name", Value.fromString(""));
     this.set("statement", Value.fromString(""));
     this.set("tokenURI", Value.fromString(""));
+    this.set("created", Value.fromBigInt(BigInt.zero()));
   }
 
   save(): void {
@@ -91,5 +92,14 @@ export class Table extends Entity {
 
   set tokenURI(value: string) {
     this.set("tokenURI", Value.fromString(value));
+  }
+
+  get created(): BigInt {
+    let value = this.get("created");
+    return value!.toBigInt();
+  }
+
+  set created(value: BigInt) {
+    this.set("created", Value.fromBigInt(value));
   }
 }

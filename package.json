@@ -7,10 +7,17 @@
     "deploy": "graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland",
     "create-local": "graph create --node http://localhost:8020/ anudit/tableland",
     "remove-local": "graph remove --node http://localhost:8020/ anudit/tableland",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 anudit/tableland"
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 anudit/tableland",
+    "prepare:mumbai": "mustache config/mumbai.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:op": "mustache config/op.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:arb": "mustache config/arb.json subgraph.template.yaml > subgraph.yaml",
+    "deploy:mumbai": "pnpm prepare:mumbai && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland",
+    "deploy:op": "pnpm prepare:op && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-optimism-goerli",
+    "deploy:arb": "pnpm prepare:arb && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-arbitrum-goerli"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.29.0",
-    "@graphprotocol/graph-ts": "0.26.0"
+    "@graphprotocol/graph-ts": "0.26.0",
+    "mustache": "^4.2.0"
   }
 }
