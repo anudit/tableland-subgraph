@@ -6,4 +6,6 @@ type Table @entity {
   statement: String!
   tokenURI: String!
   created: BigInt!
+  controller: Bytes!
+  txnHash: String!
 }

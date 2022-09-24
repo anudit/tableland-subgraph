@@ -1,17 +1,17 @@
-specVersion: 0.0.2
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum
     name: TablelandTables
-    network: optimism-goerli
+    network: goerli
     source:
-      address: "0xC72E8a7Be04f2469f8C2dB3F1BdF69A7D516aBbA"
+      address: "0xda8ea22d092307874f30a1f277d1388dca0ba97a"
       abi: TablelandTables
-      startBlock: 305950
+      startBlock: 7176494
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - Table

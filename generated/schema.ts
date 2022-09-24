@@ -22,6 +22,8 @@ export class Table extends Entity {
     this.set("statement", Value.fromString(""));
     this.set("tokenURI", Value.fromString(""));
     this.set("created", Value.fromBigInt(BigInt.zero()));
+    this.set("controller", Value.fromBytes(Bytes.empty()));
+    this.set("txnHash", Value.fromString(""));
   }
 
   save(): void {
@@ -101,5 +103,23 @@ export class Table extends Entity {
 
   set created(value: BigInt) {
     this.set("created", Value.fromBigInt(value));
+  }
+
+  get controller(): Bytes {
+    let value = this.get("controller");
+    return value!.toBytes();
+  }
+
+  set controller(value: Bytes) {
+    this.set("controller", Value.fromBytes(value));
+  }
+
+  get txnHash(): string {
+    let value = this.get("txnHash");
+    return value!.toString();
+  }
+
+  set txnHash(value: string) {
+    this.set("txnHash", Value.fromString(value));
   }
 }

@@ -1,13 +1,13 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@graphprotocol/graph-cli': 0.29.0
-  '@graphprotocol/graph-ts': 0.26.0
+  '@graphprotocol/graph-cli': 0.33.1
+  '@graphprotocol/graph-ts': 0.27.0
   mustache: ^4.2.0
 
 dependencies:
-  '@graphprotocol/graph-cli': 0.29.0
-  '@graphprotocol/graph-ts': 0.26.0
+  '@graphprotocol/graph-cli': 0.33.1
+  '@graphprotocol/graph-ts': 0.27.0
   mustache: 4.2.0
 
 packages:
@@ -199,24 +199,24 @@ packages:
       '@ethersproject/strings': 5.7.0
     dev: false
 
-  /@graphprotocol/graph-cli/0.29.0:
-    resolution: {integrity: sha512-bO7dVqVfPXwtXqTHO8NHyWafJQ+Umdom5DrXXlWbSUoZYHpNQ+gIPQM91kLxY9JouL/lrSu79zRsC0+ynlRhdA==}
+  /@graphprotocol/graph-cli/0.33.1:
+    resolution: {integrity: sha512-wv8PuDA1xrnRz52bkvo4R1XDj+5F0Oin879ogd7obOCSniXurkzHa4SjaomjHz7yyHQduorYarnXCZ+MVHuSGg==}
     hasBin: true
     dependencies:
       assemblyscript: 0.19.10
-      binary-install-raw: 0.0.13_debug@4.1.1
+      binary-install-raw: 0.0.13_debug@4.3.1
       chalk: 3.0.0
       chokidar: 3.5.1
-      debug: 4.1.1
+      debug: 4.3.1
       docker-compose: 0.23.4
       dockerode: 2.5.8
       fs-extra: 9.0.0
       glob: 7.1.6
-      gluegun: github.com/edgeandnode/gluegun/b34b9003d7bf556836da41b57ef36eb21570620a_debug@4.1.1
+      gluegun: github.com/edgeandnode/gluegun/b34b9003d7bf556836da41b57ef36eb21570620a_debug@4.3.1
       graphql: 15.5.0
       immutable: 3.8.2
       ipfs-http-client: 34.0.0
-      jayson: 3.2.0
+      jayson: 3.6.6
       js-yaml: 3.13.1
       node-fetch: 2.6.0
       pkginfo: 0.4.1
@@ -229,11 +229,13 @@ packages:
       which: 2.0.2
       yaml: 1.9.2
     transitivePeerDependencies:
+      - bufferutil
       - supports-color
+      - utf-8-validate
     dev: false
 
-  /@graphprotocol/graph-ts/0.26.0:
-    resolution: {integrity: sha512-GW/emOJl+35MXgmIxTnUK7dJtPCaB9u5aAwoLVqJ8swogC794O92UrXMVrAJsherUriu+yI9bLMGmNPOIi60jw==}
+  /@graphprotocol/graph-ts/0.27.0:
+    resolution: {integrity: sha512-r1SPDIZVQiGMxcY8rhFSM0y7d/xAbQf5vHMWUf59js1KgoyWpM6P3tczZqmQd7JTmeyNsDGIPzd9FeaxllsU4w==}
     dependencies:
       assemblyscript: 0.19.10
     dev: false
@@ -241,7 +243,7 @@ packages:
   /@types/bn.js/5.1.1:
     resolution: {integrity: sha512-qNrYbZqMx0uJAfKnKclPh+dTwK33KfLHYqtyODwd5HnXOjnkhc4qgn3BrK6RWyGZm5+sIFE7Q7Vz6QQtJB7w7g==}
     dependencies:
-      '@types/node': 18.7.18
+      '@types/node': 18.7.19
     dev: false
 
   /@types/concat-stream/1.6.1:
@@ -282,8 +284,8 @@ packages:
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
     dev: false
 
-  /@types/node/18.7.18:
-    resolution: {integrity: sha512-m+6nTEOadJZuTPkKR/SYK3A2d7FZrgElol9UP1Kae90VVU4a6mxnPuLiIW1m4Cq4gZ/nWb9GrdVXJCoCazDAbg==}
+  /@types/node/18.7.19:
+    resolution: {integrity: sha512-Sq1itGUKUX1ap7GgZlrzdBydjbsJL/NSQt/4wkAxUJ7/OS5c2WkoN6WSpWc2Yc5wtKMZOUA0VCs/j2XJadN3HA==}
     dev: false
 
   /@types/node/8.10.66:
@@ -297,7 +299,7 @@ packages:
   /@types/pbkdf2/3.1.0:
     resolution: {integrity: sha512-Cf63Rv7jCQ0LaL8tNXmEyqTHuIJxRdlS5vMh1mj5voN4+QFhVZnlZruezqpWYDiJ8UTzhP0VmeLXCmBk66YrMQ==}
     dependencies:
-      '@types/node': 18.7.18
+      '@types/node': 18.7.19
     dev: false
 
   /@types/qs/6.9.7:
@@ -311,7 +313,13 @@ packages:
   /@types/secp256k1/4.0.3:
     resolution: {integrity: sha512-Da66lEIFeIz9ltsdMZcpQvmrmmoqrfju8pm1BH8WbYjZSwUgCwXLb9C+9XYogwBITnbsSaMdVPb2ekf7TV+03w==}
     dependencies:
-      '@types/node': 18.7.18
+      '@types/node': 18.7.19
+    dev: false
+
+  /@types/ws/7.4.7:
+    resolution: {integrity: sha512-JQbbmxZTZehdc2iszGKs5oC3NFnjeay7mtAWrdt7qNtAVK0g19muApzAy4bm9byz79xa2ZnO/BOBC2R8RC5Lww==}
+    dependencies:
+      '@types/node': 12.20.55
     dev: false
 
   /JSONStream/1.3.2:
@@ -383,10 +391,10 @@ packages:
       picomatch: 2.3.1
     dev: false
 
-  /apisauce/1.1.5_debug@4.1.1:
+  /apisauce/1.1.5_debug@4.3.1:
     resolution: {integrity: sha512-gKC8qb/bDJsPsnEXLZnXJ7gVx7dh87CEVNeIwv1dvaffnXoh5GHwac5pWR1P2broLiVj/fqFMQvLDDt/RhjiqA==}
     dependencies:
-      axios: 0.21.4_debug@4.1.1
+      axios: 0.21.4_debug@4.3.1
       ramda: 0.25.0
     transitivePeerDependencies:
       - debug
@@ -461,10 +469,10 @@ packages:
     resolution: {integrity: sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==}
     dev: false
 
-  /axios/0.21.4_debug@4.1.1:
+  /axios/0.21.4_debug@4.3.1:
     resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
     dependencies:
-      follow-redirects: 1.15.2_debug@4.1.1
+      follow-redirects: 1.15.2_debug@4.3.1
     transitivePeerDependencies:
       - debug
     dev: false
@@ -498,11 +506,11 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /binary-install-raw/0.0.13_debug@4.1.1:
+  /binary-install-raw/0.0.13_debug@4.3.1:
     resolution: {integrity: sha512-v7ms6N/H7iciuk6QInon3/n2mu7oRX+6knJ9xFPsJ3rQePgAqcR3CRTwUheFd8SLbiq4LL7Z4G/44L9zscdt9A==}
     engines: {node: '>=10'}
     dependencies:
-      axios: 0.21.4_debug@4.1.1
+      axios: 0.21.4_debug@4.3.1
       rimraf: 3.0.2
       tar: 6.1.11
     transitivePeerDependencies:
@@ -902,16 +910,16 @@ packages:
       ms: 2.1.3
     dev: false
 
-  /debug/4.1.1:
-    resolution: {integrity: sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==}
-    deprecated: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+  /debug/4.3.1:
+    resolution: {integrity: sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==}
+    engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
     peerDependenciesMeta:
       supports-color:
         optional: true
     dependencies:
-      ms: 2.1.3
+      ms: 2.1.2
     dev: false
 
   /decamelize/1.2.0:
@@ -923,6 +931,11 @@ packages:
     resolution: {integrity: sha512-s82itHOnYrN0Ib8r+z7laQz3sdE+4FP3d9Q7VLO7U+KRT+CR0GsWuyHxzdAY82I7cXv0G/twrqomTJLOssO5HA==}
     dependencies:
       clone: 1.0.4
+    dev: false
+
+  /delay/5.0.0:
+    resolution: {integrity: sha512-ReEBKkIfe4ya47wlPYf/gu5ib6yUG0/Aez0JQZQz94kiWtRQvZIQbTiehsnwHvLSWJnQdhVeqYue7Id1dKr0qw==}
+    engines: {node: '>=10'}
     dev: false
 
   /delayed-stream/1.0.0:
@@ -1162,7 +1175,7 @@ packages:
     resolution: {integrity: sha512-OuR+o7kHVe+x9RtIujPay7Uw3bvDZBZFSBXClEphZuSDLmZTqMdclasf4vFSsogC8baDz0eaC2NdO/2dlXHBKQ==}
     dev: false
 
-  /follow-redirects/1.15.2_debug@4.1.1:
+  /follow-redirects/1.15.2_debug@4.3.1:
     resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
     engines: {node: '>=4.0'}
     peerDependencies:
@@ -1171,7 +1184,7 @@ packages:
       debug:
         optional: true
     dependencies:
-      debug: 4.1.1
+      debug: 4.3.1
     dev: false
 
   /forever-agent/0.6.1:
@@ -1450,7 +1463,7 @@ packages:
       buffer: 5.7.1
       cids: 0.7.5
       concat-stream: github.com/hugomrdias/concat-stream/057bc7b5d6d8df26c8cf00a3f151b6721a0a8034
-      debug: 4.1.1
+      debug: 4.3.1
       detect-node: 2.1.0
       end-of-stream: 1.4.4
       err-code: 2.0.3
@@ -1675,6 +1688,14 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
+  /isomorphic-ws/4.0.1_ws@7.5.9:
+    resolution: {integrity: sha512-BhBvN2MBpWTaSHdWRb/bwdZJ1WaehQ2L1KngkCkfLUGF0mAWAT1sQUQacEmQ0jXkFw/czDXPNQSL5u2/Krsz1w==}
+    peerDependencies:
+      ws: '*'
+    dependencies:
+      ws: 7.5.9
+    dev: false
+
   /isstream/0.1.2:
     resolution: {integrity: sha512-Yljz7ffyPbrLpLngrMtZ7NduUgVvi6wG9RJ9IUcyCd59YQ911PBJphODUcbOVbqYfxe1wuYf/LJ8PauMRwsM/g==}
     dev: false
@@ -1685,21 +1706,29 @@ packages:
       string_decoder: 1.3.0
     dev: false
 
-  /jayson/3.2.0:
-    resolution: {integrity: sha512-DZQnwA57GcStw4soSYB2VntWXFfoWvmSarlaWePDYOWhjxT72PBM4atEBomaTaS1uqk3jFC9UO9AyWjlujo3xw==}
+  /jayson/3.6.6:
+    resolution: {integrity: sha512-f71uvrAWTtrwoww6MKcl9phQTC+56AopLyEenWvKVAIMz+q0oVGj6tenLZ7Z6UiPBkJtKLj4kt0tACllFQruGQ==}
+    engines: {node: '>=8'}
     hasBin: true
     dependencies:
       '@types/connect': 3.4.35
       '@types/express-serve-static-core': 4.17.31
       '@types/lodash': 4.14.185
       '@types/node': 12.20.55
+      '@types/ws': 7.4.7
       JSONStream: 1.3.5
       commander: 2.20.3
+      delay: 5.0.0
       es6-promisify: 5.0.0
       eyes: 0.1.8
+      isomorphic-ws: 4.0.1_ws@7.5.9
       json-stringify-safe: 5.0.1
       lodash: 4.17.21
-      uuid: 3.4.0
+      uuid: 8.3.2
+      ws: 7.5.9
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
     dev: false
 
   /js-sha3/0.8.0:
@@ -2026,6 +2055,10 @@ packages:
     resolution: {integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==}
     engines: {node: '>=10'}
     hasBin: true
+    dev: false
+
+  /ms/2.1.2:
+    resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: false
 
   /ms/2.1.3:
@@ -3000,6 +3033,11 @@ packages:
     hasBin: true
     dev: false
 
+  /uuid/8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
+    dev: false
+
   /varint/5.0.2:
     resolution: {integrity: sha512-lKxKYG6H03yCZUpAGOPOsMcGxd1RHCu1iKvEHYDPmTyq2HueGhD73ssNBqqQWfvYs04G9iUFRvmAVLW20Jw6ow==}
     dev: false
@@ -3057,6 +3095,19 @@ packages:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: false
 
+  /ws/7.5.9:
+    resolution: {integrity: sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==}
+    engines: {node: '>=8.3.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+    dev: false
+
   /xtend/4.0.2:
     resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
     engines: {node: '>=0.4'}
@@ -3084,14 +3135,14 @@ packages:
       decamelize: 1.2.0
     dev: false
 
-  github.com/edgeandnode/gluegun/b34b9003d7bf556836da41b57ef36eb21570620a_debug@4.1.1:
+  github.com/edgeandnode/gluegun/b34b9003d7bf556836da41b57ef36eb21570620a_debug@4.3.1:
     resolution: {tarball: https://codeload.github.com/edgeandnode/gluegun/tar.gz/b34b9003d7bf556836da41b57ef36eb21570620a}
     id: github.com/edgeandnode/gluegun/b34b9003d7bf556836da41b57ef36eb21570620a
     name: gluegun
     version: 4.3.1
     hasBin: true
     dependencies:
-      apisauce: 1.1.5_debug@4.1.1
+      apisauce: 1.1.5_debug@4.3.1
       app-module-path: 2.2.0
       cli-table3: 0.5.1
       colors: 1.3.3

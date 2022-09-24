@@ -11,13 +11,16 @@
     "prepare:mumbai": "mustache config/mumbai.json subgraph.template.yaml > subgraph.yaml",
     "prepare:op": "mustache config/op.json subgraph.template.yaml > subgraph.yaml",
     "prepare:arb": "mustache config/arb.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:goerli": "mustache config/goerli.json subgraph.template.yaml > subgraph.yaml",
     "deploy:mumbai": "pnpm prepare:mumbai && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland",
     "deploy:op": "pnpm prepare:op && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-optimism-goerli",
-    "deploy:arb": "pnpm prepare:arb && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-arbitrum-goerli"
+    "deploy:arb": "pnpm prepare:arb && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-arbitrum-goerli",
+    "deploy:goerli": "pnpm prepare:goerli && graph deploy --studio tableland-ethereum-goerli",
+    "deploy:all": "pnpm deploy:mumbai && pnpm deploy:op && pnpm deploy:arb && pnpm deploy:goerli"
   },
   "dependencies": {
-    "@graphprotocol/graph-cli": "0.29.0",
-    "@graphprotocol/graph-ts": "0.26.0",
+    "@graphprotocol/graph-cli": "0.33.1",
+    "@graphprotocol/graph-ts": "0.27.0",
     "mustache": "^4.2.0"
   }
 }
