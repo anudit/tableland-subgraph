@@ -1,13 +1,13 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@graphprotocol/graph-cli': 0.33.1
-  '@graphprotocol/graph-ts': 0.27.0
+  '@graphprotocol/graph-cli': 0.34.0
+  '@graphprotocol/graph-ts': 0.28.0
   mustache: ^4.2.0
 
 dependencies:
-  '@graphprotocol/graph-cli': 0.33.1
-  '@graphprotocol/graph-ts': 0.27.0
+  '@graphprotocol/graph-cli': 0.34.0
+  '@graphprotocol/graph-ts': 0.28.0
   mustache: 4.2.0
 
 packages:
@@ -199,8 +199,8 @@ packages:
       '@ethersproject/strings': 5.7.0
     dev: false
 
-  /@graphprotocol/graph-cli/0.33.1:
-    resolution: {integrity: sha512-wv8PuDA1xrnRz52bkvo4R1XDj+5F0Oin879ogd7obOCSniXurkzHa4SjaomjHz7yyHQduorYarnXCZ+MVHuSGg==}
+  /@graphprotocol/graph-cli/0.34.0:
+    resolution: {integrity: sha512-tHmephhj5i6SQIyHNpF/dP9QEuVz4jdyg7CEfo0r3/3Wq/CC/turoVEZ2QK7h4sEg9dRJW/jampoD0BO7bVGWw==}
     hasBin: true
     dependencies:
       assemblyscript: 0.19.10
@@ -234,8 +234,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@graphprotocol/graph-ts/0.27.0:
-    resolution: {integrity: sha512-r1SPDIZVQiGMxcY8rhFSM0y7d/xAbQf5vHMWUf59js1KgoyWpM6P3tczZqmQd7JTmeyNsDGIPzd9FeaxllsU4w==}
+  /@graphprotocol/graph-ts/0.28.0:
+    resolution: {integrity: sha512-Qug3KpmqZ/KOg3FFBOtD74GAK/9AkR7lTxoEYMdx3jZ/+fi9oOSDod2vEkLOjUxsE7yZOseNqiXOxeU0XGqJWw==}
     dependencies:
       assemblyscript: 0.19.10
     dev: false
@@ -243,7 +243,7 @@ packages:
   /@types/bn.js/5.1.1:
     resolution: {integrity: sha512-qNrYbZqMx0uJAfKnKclPh+dTwK33KfLHYqtyODwd5HnXOjnkhc4qgn3BrK6RWyGZm5+sIFE7Q7Vz6QQtJB7w7g==}
     dependencies:
-      '@types/node': 18.7.19
+      '@types/node': 18.7.23
     dev: false
 
   /@types/concat-stream/1.6.1:
@@ -284,8 +284,8 @@ packages:
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
     dev: false
 
-  /@types/node/18.7.19:
-    resolution: {integrity: sha512-Sq1itGUKUX1ap7GgZlrzdBydjbsJL/NSQt/4wkAxUJ7/OS5c2WkoN6WSpWc2Yc5wtKMZOUA0VCs/j2XJadN3HA==}
+  /@types/node/18.7.23:
+    resolution: {integrity: sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==}
     dev: false
 
   /@types/node/8.10.66:
@@ -299,7 +299,7 @@ packages:
   /@types/pbkdf2/3.1.0:
     resolution: {integrity: sha512-Cf63Rv7jCQ0LaL8tNXmEyqTHuIJxRdlS5vMh1mj5voN4+QFhVZnlZruezqpWYDiJ8UTzhP0VmeLXCmBk66YrMQ==}
     dependencies:
-      '@types/node': 18.7.19
+      '@types/node': 18.7.23
     dev: false
 
   /@types/qs/6.9.7:
@@ -313,7 +313,7 @@ packages:
   /@types/secp256k1/4.0.3:
     resolution: {integrity: sha512-Da66lEIFeIz9ltsdMZcpQvmrmmoqrfju8pm1BH8WbYjZSwUgCwXLb9C+9XYogwBITnbsSaMdVPb2ekf7TV+03w==}
     dependencies:
-      '@types/node': 18.7.19
+      '@types/node': 18.7.23
     dev: false
 
   /@types/ws/7.4.7:
@@ -2446,6 +2446,7 @@ packages:
     resolution: {integrity: sha512-N9iVG+CGJsI4b4ZGazjwLnxErD2d9Pe4DPvvXSxYA9tFNu8ymXME4Qs5HIQ0LMJpNM7zj+m0NlNnNeqFpKzqnA==}
     deprecated: Unmaintained
     dev: false
+    bundledDependencies: []
 
   /protocol-buffers-schema/3.6.0:
     resolution: {integrity: sha512-TdDRD+/QNdrCGCE7v8340QyuXd4kIWIgapsE2+n/SaGiSSbomYl4TjHlvIoCWRpE7wFt02EpB35VVA2ImcBVqw==}

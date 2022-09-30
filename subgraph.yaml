@@ -21,4 +21,8 @@ dataSources:
       eventHandlers:
         - event: CreateTable(address,uint256,string)
           handler: handleCreateTable
+        - event: SetController(uint256,address)
+          handler: handleSetController
+        - event: RunSQL(address,bool,uint256,string,(bool,bool,bool,string,string,string[]))
+          handler: handleRunSql
       file: ./src/mapping.ts

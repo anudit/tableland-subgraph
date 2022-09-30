@@ -216,6 +216,68 @@ export class Paused__Params {
   }
 }
 
+export class RunSQL extends ethereum.Event {
+  get params(): RunSQL__Params {
+    return new RunSQL__Params(this);
+  }
+}
+
+export class RunSQL__Params {
+  _event: RunSQL;
+
+  constructor(event: RunSQL) {
+    this._event = event;
+  }
+
+  get caller(): Address {
+    return this._event.parameters[0].value.toAddress();
+  }
+
+  get isOwner(): boolean {
+    return this._event.parameters[1].value.toBoolean();
+  }
+
+  get tableId(): BigInt {
+    return this._event.parameters[2].value.toBigInt();
+  }
+
+  get statement(): string {
+    return this._event.parameters[3].value.toString();
+  }
+
+  get policy(): RunSQLPolicyStruct {
+    return changetype<RunSQLPolicyStruct>(
+      this._event.parameters[4].value.toTuple()
+    );
+  }
+}
+
+export class RunSQLPolicyStruct extends ethereum.Tuple {
+  get allowInsert(): boolean {
+    return this[0].toBoolean();
+  }
+
+  get allowUpdate(): boolean {
+    return this[1].toBoolean();
+  }
+
+  get allowDelete(): boolean {
+    return this[2].toBoolean();
+  }
+
+  get whereClause(): string {
+    return this[3].toString();
+  }
+
+  get withCheck(): string {
+    return this[4].toString();
+  }
+
+  get updatableColumns(): Array<string> {
+    return this[5].toStringArray();
+  }
+}
+
 export class SetController extends ethereum.Event {
   get params(): SetController__Params {
     return new SetController__Params(this);

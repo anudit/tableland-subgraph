@@ -8,4 +8,13 @@ type Table @entity {
   created: BigInt!
   controller: Bytes!
   txnHash: String!
+  historyCount: BigInt!
+  history: [History!] @derivedFrom(field: "tablePointed")
+}
+
+type History @entity {
+  id: ID!
+  statement: String!
+  time: BigInt!
+  tablePointed: Table!
 }

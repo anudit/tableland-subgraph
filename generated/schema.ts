@@ -15,15 +15,6 @@ export class Table extends Entity {
   constructor(id: string) {
     super();
     this.set("id", Value.fromString(id));
-
-    this.set("owner", Value.fromBytes(Bytes.empty()));
-    this.set("tableId", Value.fromBigInt(BigInt.zero()));
-    this.set("name", Value.fromString(""));
-    this.set("statement", Value.fromString(""));
-    this.set("tokenURI", Value.fromString(""));
-    this.set("created", Value.fromBigInt(BigInt.zero()));
-    this.set("controller", Value.fromBytes(Bytes.empty()));
-    this.set("txnHash", Value.fromString(""));
   }
 
   save(): void {
@@ -121,5 +112,90 @@ export class Table extends Entity {
 
   set txnHash(value: string) {
     this.set("txnHash", Value.fromString(value));
+  }
+
+  get historyCount(): BigInt {
+    let value = this.get("historyCount");
+    return value!.toBigInt();
+  }
+
+  set historyCount(value: BigInt) {
+    this.set("historyCount", Value.fromBigInt(value));
+  }
+
+  get history(): Array<string> | null {
+    let value = this.get("history");
+    if (!value || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toStringArray();
+    }
+  }
+
+  set history(value: Array<string> | null) {
+    if (!value) {
+      this.unset("history");
+    } else {
+      this.set("history", Value.fromStringArray(<Array<string>>value));
+    }
+  }
+}
+
+export class History extends Entity {
+  constructor(id: string) {
+    super();
+    this.set("id", Value.fromString(id));
+  }
+
+  save(): void {
+    let id = this.get("id");
+    assert(id != null, "Cannot save History entity without an ID");
+    if (id) {
+      assert(
+        id.kind == ValueKind.STRING,
+        `Entities of type History must have an ID of type String but the id '${id.displayData()}' is of type ${id.displayKind()}`
+      );
+      store.set("History", id.toString(), this);
+    }
+  }
+
+  static load(id: string): History | null {
+    return changetype<History | null>(store.get("History", id));
+  }
+
+  get id(): string {
+    let value = this.get("id");
+    return value!.toString();
+  }
+
+  set id(value: string) {
+    this.set("id", Value.fromString(value));
+  }
+
+  get statement(): string {
+    let value = this.get("statement");
+    return value!.toString();
+  }
+
+  set statement(value: string) {
+    this.set("statement", Value.fromString(value));
+  }
+
+  get time(): BigInt {
+    let value = this.get("time");
+    return value!.toBigInt();
+  }
+
+  set time(value: BigInt) {
+    this.set("time", Value.fromBigInt(value));
+  }
+
+  get tablePointed(): string {
+    let value = this.get("tablePointed");
+    return value!.toString();
+  }
+
+  set tablePointed(value: string) {
+    this.set("tablePointed", Value.fromString(value));
   }
 }
