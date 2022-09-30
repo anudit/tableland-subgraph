@@ -1,12 +1,12 @@
 type Table @entity {
   id: ID!
-  owner: Bytes!
+  owner: User!
   tableId: BigInt!
   name: String!
   statement: String!
   tokenURI: String!
   created: BigInt!
-  controller: Bytes!
+  controller: User!
   txnHash: String!
   historyCount: BigInt!
   history: [History!] @derivedFrom(field: "tablePointed")
@@ -17,4 +17,10 @@ type History @entity {
   statement: String!
   time: BigInt!
   tablePointed: Table!
+}
+
+type User @entity {
+  id: ID!
+  tablesOwned: [Table!] @derivedFrom(field: "owner")
+  tablesControlled: [Table!] @derivedFrom(field: "controller")
 }

@@ -2,9 +2,11 @@ import {
   TablelandTables,
   CreateTable,
   SetController,
-  RunSQL
+  RunSQL,
+  Transfer,
+  TransferTable
 } from "../generated/TablelandTables/TablelandTables"
-import { Table, History } from "../generated/schema"
+import { Table, History, User } from "../generated/schema"
 import { BigInt } from "@graphprotocol/graph-ts";
 
 export function handleCreateTable(event: CreateTable): void {
@@ -14,7 +16,13 @@ export function handleCreateTable(event: CreateTable): void {
     entity = new Table(event.params.tableId.toString())
   }
 
-  entity.owner = event.params.owner;
+  let user = User.load(event.params.owner.toHexString())
+  if (!user) {
+    user = new User(event.params.owner.toHexString())
+    user.save()
+  }
+
+  entity.owner = event.params.owner.toHexString();
   entity.tableId = event.params.tableId;
   entity.statement = event.params.statement;
   entity.name = event.params.statement.split(' ')[2].concat(`_${event.params.tableId}`);
@@ -23,7 +31,7 @@ export function handleCreateTable(event: CreateTable): void {
 
   let contract = TablelandTables.bind(event.address);
   entity.tokenURI = contract.tokenURI(event.params.tableId);
-  entity.controller = event.params.owner;
+  entity.controller = event.params.owner.toHexString();
   entity.historyCount = BigInt.fromI32(0);
 
   entity.save();
@@ -32,9 +40,31 @@ export function handleCreateTable(event: CreateTable): void {
 
 export function handleSetController(event: SetController): void {
 
+  let user = User.load(event.params.controller.toHexString())
+  if (!user) {
+    user = new User(event.params.controller.toHexString())
+    user.save()
+  }
+
   let entity = Table.load(event.params.tableId.toString())
   if (entity) {
-    entity.controller = event.params.controller;
+    entity.controller = event.params.controller.toHexString();
+    entity.save();
+  }
+
+}
+
+export function handleTransferTable(event: TransferTable): void {
+
+  let user = User.load(event.params.to.toHexString())
+  if (!user) {
+    user = new User(event.params.to.toHexString())
+    user.save()
+  }
+
+  let entity = Table.load(event.params.tableId.toString())
+  if (entity) {
+    entity.owner = event.params.to.toHexString();
     entity.save();
   }
 

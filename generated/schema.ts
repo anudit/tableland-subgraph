@@ -42,13 +42,13 @@ export class Table extends Entity {
     this.set("id", Value.fromString(value));
   }
 
-  get owner(): Bytes {
+  get owner(): string {
     let value = this.get("owner");
-    return value!.toBytes();
+    return value!.toString();
   }
 
-  set owner(value: Bytes) {
-    this.set("owner", Value.fromBytes(value));
+  set owner(value: string) {
+    this.set("owner", Value.fromString(value));
   }
 
   get tableId(): BigInt {
@@ -96,13 +96,13 @@ export class Table extends Entity {
     this.set("created", Value.fromBigInt(value));
   }
 
-  get controller(): Bytes {
+  get controller(): string {
     let value = this.get("controller");
-    return value!.toBytes();
+    return value!.toString();
   }
 
-  set controller(value: Bytes) {
-    this.set("controller", Value.fromBytes(value));
+  set controller(value: string) {
+    this.set("controller", Value.fromString(value));
   }
 
   get txnHash(): string {
@@ -197,5 +197,71 @@ export class History extends Entity {
 
   set tablePointed(value: string) {
     this.set("tablePointed", Value.fromString(value));
+  }
+}
+
+export class User extends Entity {
+  constructor(id: string) {
+    super();
+    this.set("id", Value.fromString(id));
+  }
+
+  save(): void {
+    let id = this.get("id");
+    assert(id != null, "Cannot save User entity without an ID");
+    if (id) {
+      assert(
+        id.kind == ValueKind.STRING,
+        `Entities of type User must have an ID of type String but the id '${id.displayData()}' is of type ${id.displayKind()}`
+      );
+      store.set("User", id.toString(), this);
+    }
+  }
+
+  static load(id: string): User | null {
+    return changetype<User | null>(store.get("User", id));
+  }
+
+  get id(): string {
+    let value = this.get("id");
+    return value!.toString();
+  }
+
+  set id(value: string) {
+    this.set("id", Value.fromString(value));
+  }
+
+  get tablesOwned(): Array<string> | null {
+    let value = this.get("tablesOwned");
+    if (!value || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toStringArray();
+    }
+  }
+
+  set tablesOwned(value: Array<string> | null) {
+    if (!value) {
+      this.unset("tablesOwned");
+    } else {
+      this.set("tablesOwned", Value.fromStringArray(<Array<string>>value));
+    }
+  }
+
+  get tablesControlled(): Array<string> | null {
+    let value = this.get("tablesControlled");
+    if (!value || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toStringArray();
+    }
+  }
+
+  set tablesControlled(value: Array<string> | null) {
+    if (!value) {
+      this.unset("tablesControlled");
+    } else {
+      this.set("tablesControlled", Value.fromStringArray(<Array<string>>value));
+    }
   }
 }

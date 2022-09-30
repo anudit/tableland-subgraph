@@ -15,6 +15,8 @@ dataSources:
       language: wasm/assemblyscript
       entities:
         - Table
+        - History
+        - User
       abis:
         - name: TablelandTables
           file: ./abis/TablelandTables.json
@@ -25,4 +27,6 @@ dataSources:
           handler: handleSetController
         - event: RunSQL(address,bool,uint256,string,(bool,bool,bool,string,string,string[]))
           handler: handleRunSql
+        - event: TransferTable(address,address,uint256)
+          handler: handleTransferTable
       file: ./src/mapping.ts

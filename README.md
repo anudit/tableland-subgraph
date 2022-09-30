@@ -2,17 +2,17 @@
 
 ## ethereum-goerli
 
-Build completed: QmcHuauTV47aNCpPznwWyxRtR7HYxPtosgUSPCnnNjrYRL
+Build completed: QmeEtrftWXYebxdc1syku1xUndu79dgj8Cw9WYSuziSN1R
 
 Deployed to https://thegraph.com/studio/subgraph/tableland-ethereum-goerli
 
 Subgraph endpoints:
-Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tableland-ethereum-goerli/v1.1
+Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tableland-ethereum-goerli/v1.2
 
 
 ## mumbai
 
-Build completed: QmWMndJchbf5VihcuUiFmzgGmWBcGDTVkj2CmZKhE5uPUH
+Build completed: QmTQE4tLN7ZrJ2U6GL2wgMWvuTwZ25HmuMF9WrfnP5vuVc
 
 Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland
 
@@ -23,7 +23,7 @@ Subscriptions (WS): wss://api.thegraph.com/subgraphs/name/anudit/tableland
 
 ## optimism-goerli
 
-Build completed: QmPtwkrK5YiLyTJMS1a8sUunpjDbAqBhCdC5mcsojmAGxe
+Build completed: Qma64NYfc3NrBo3GSwVDWXn8uUMSHFif8GTFc2Zmfaoobz
 
 Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland-optimism-goerli
 
@@ -33,7 +33,7 @@ Subscriptions (WS): wss://api.thegraph.com/subgraphs/name/anudit/tableland-optim
 
 ## arbitrum-goerli
 
-Build completed: QmWGy3dJkrrrAv2PyoSVT7bFeF4cX9mEJeR1TR6EqyHgfH
+Build completed: QmPDxMQVem9WSnThmTiMjbkTWMce2TRSk94AC6sGMBGPaG
 
 Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland-arbitrum-goerli
 
