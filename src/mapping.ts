@@ -3,11 +3,12 @@ import {
   CreateTable,
   SetController,
   RunSQL,
-  Transfer,
   TransferTable
 } from "../generated/TablelandTables/TablelandTables"
 import { Table, History, User } from "../generated/schema"
 import { BigInt } from "@graphprotocol/graph-ts";
+
+const ONE = BigInt.fromI32(1);
 
 export function handleCreateTable(event: CreateTable): void {
 
@@ -35,7 +36,6 @@ export function handleCreateTable(event: CreateTable): void {
   entity.historyCount = BigInt.fromI32(0);
 
   entity.save();
-
 }
 
 export function handleSetController(event: SetController): void {
@@ -51,6 +51,7 @@ export function handleSetController(event: SetController): void {
     entity.controller = event.params.controller.toHexString();
     entity.save();
   }
+
 
 }
 
