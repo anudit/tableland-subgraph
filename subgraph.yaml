@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: TablelandTables
-    network: goerli
+    network: mumbai
     source:
-      address: "0xda8ea22d092307874f30a1f277d1388dca0ba97a"
+      address: "0x4b48841d4b32C4650E4ABc117A03FE8B51f38F68"
       abi: TablelandTables
-      startBlock: 7176494
+      startBlock: 27046666
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6

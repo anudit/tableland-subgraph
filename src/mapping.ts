@@ -26,7 +26,11 @@ export function handleCreateTable(event: CreateTable): void {
   entity.owner = event.params.owner.toHexString();
   entity.tableId = event.params.tableId;
   entity.statement = event.params.statement;
-  entity.name = event.params.statement.split(' ')[2].concat(`_${event.params.tableId}`);
+
+  let cleanName = event.params.statement.split(' ')[2];
+  if (cleanName.includes('(')) cleanName = cleanName.split('(')[0]
+
+  entity.name = cleanName.concat(`_${event.params.tableId}`);
   entity.created = event.block.timestamp;
   entity.txnHash = event.transaction.hash.toHexString();
 
