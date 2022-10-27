@@ -3,10 +3,11 @@ import {
   CreateTable,
   SetController,
   RunSQL,
-  TransferTable
+  TransferTable,
+  BurnCall
 } from "../generated/TablelandTables/TablelandTables"
 import { Table, History, User } from "../generated/schema"
-import { BigInt } from "@graphprotocol/graph-ts";
+import { BigInt, store } from "@graphprotocol/graph-ts";
 
 const ONE = BigInt.fromI32(1);
 
@@ -27,8 +28,8 @@ export function handleCreateTable(event: CreateTable): void {
   entity.tableId = event.params.tableId;
   entity.statement = event.params.statement;
 
-  let cleanName = event.params.statement.split(' ')[2];
-  if (cleanName.includes('(')) cleanName = cleanName.split('(')[0]
+  let cleanName = event.params.statement.slice(12).trim().split(' ')[0];
+  if (cleanName.includes('(')) cleanName = cleanName.split('(')[0];
 
   entity.name = cleanName.concat(`_${event.params.tableId}`);
   entity.created = event.block.timestamp;
@@ -89,5 +90,12 @@ export function handleRunSql(event: RunSQL): void {
 
     entity.save();
   }
+
+}
+
+export function handleBurn(event: BurnCall): void {
+
+  let entity = Table.load(event.inputs.tokenId.toString())
+  if (entity) store.remove('Table', event.inputs.tokenId.toString())
 
 }
