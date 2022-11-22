@@ -9,6 +9,7 @@ type Table @entity {
   controller: User!
   txnHash: String!
   historyCount: BigInt!
+  lastUpdated: BigInt!
   history: [History!] @derivedFrom(field: "tablePointed")
 }
 

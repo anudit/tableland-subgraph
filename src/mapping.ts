@@ -27,6 +27,7 @@ export function handleCreateTable(event: CreateTable): void {
   entity.owner = event.params.owner.toHexString();
   entity.tableId = event.params.tableId;
   entity.statement = event.params.statement;
+  entity.lastUpdated = event.block.timestamp;
 
   let cleanName = event.params.statement.slice(12).trim().split(' ')[0];
   if (cleanName.includes('(')) cleanName = cleanName.split('(')[0];
@@ -81,6 +82,7 @@ export function handleRunSql(event: RunSQL): void {
   let entity = Table.load(event.params.tableId.toString())
   if (entity) {
     entity.historyCount = entity.historyCount.plus(BigInt.fromI32(1));
+    entity.lastUpdated = event.block.timestamp;
 
     let history = new History(event.transaction.hash.toHexString());
     history.statement = event.params.statement;
