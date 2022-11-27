@@ -123,6 +123,15 @@ export class Table extends Entity {
     this.set("historyCount", Value.fromBigInt(value));
   }
 
+  get lastUpdated(): BigInt {
+    let value = this.get("lastUpdated");
+    return value!.toBigInt();
+  }
+
+  set lastUpdated(value: BigInt) {
+    this.set("lastUpdated", Value.fromBigInt(value));
+  }
+
   get history(): Array<string> | null {
     let value = this.get("history");
     if (!value || value.kind == ValueKind.NULL) {
@@ -197,6 +206,15 @@ export class History extends Entity {
 
   set tablePointed(value: string) {
     this.set("tablePointed", Value.fromString(value));
+  }
+
+  get actionBy(): string {
+    let value = this.get("actionBy");
+    return value!.toString();
+  }
+
+  set actionBy(value: string) {
+    this.set("actionBy", Value.fromString(value));
   }
 }
 

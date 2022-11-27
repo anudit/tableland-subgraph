@@ -88,6 +88,7 @@ export function handleRunSql(event: RunSQL): void {
     history.statement = event.params.statement;
     history.time = event.block.timestamp;
     history.tablePointed = event.params.tableId.toString();
+    history.actionBy = event.transaction.from.toHexString();
     history.save();
 
     entity.save();

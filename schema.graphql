@@ -18,6 +18,7 @@ type History @entity {
   statement: String!
   time: BigInt!
   tablePointed: Table!
+  actionBy: User!
 }
 
 type User @entity {

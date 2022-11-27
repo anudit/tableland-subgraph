@@ -4,6 +4,7 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
+    "auth": "graph auth",
     "deploy": "graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland",
     "create-local": "graph create --node http://localhost:8020/ anudit/tableland",
     "remove-local": "graph remove --node http://localhost:8020/ anudit/tableland",

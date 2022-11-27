@@ -2,12 +2,12 @@
 
 ## Ethereum Mainnet
 
-Build completed: QmTpr4vQfDoJzNwCaMtGut8C5i2s6BdWdn1DnLxNUKxQUb
+Build completed: QmQeNRUHfZ3kSUaV4F1FLP3sxp4b6ADG17yFb8SUicLLiZ
 
 Deployed to https://thegraph.com/studio/subgraph/tableland-ethereum
 
 Subgraph endpoints:
-Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tableland-ethereum/v1.9
+Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tableland-ethereum/v1.10
 
 
 ## Ethereum Goerli
@@ -17,12 +17,12 @@ Build completed: QmcucXZ4e7CNaQTPE5bwev1DGXKKXJm2WEJGmudY2ateCu
 Deployed to https://thegraph.com/studio/subgraph/tableland-ethereum-goerli
 
 Subgraph endpoints:
-Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tableland-ethereum-goerli/v1.9
+Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tableland-ethereum-goerli/v1.10
 
 
 ## Polygon Mainnet
 
-Build completed: QmT7oQmboLV5wBojYPSYSpx8xLAdnuavfJhbuNhjj8RvvP
+Build completed: QmXdrXeYW4sfFWCfTcHxsZGZaznhjkyTahpVjBM6eTtnEZ
 
 Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland-polygon
 
@@ -32,7 +32,7 @@ Queries (HTTP):     https://api.thegraph.com/subgraphs/name/anudit/tableland-pol
 
 ## Polygon Mumbai Testnet
 
-Build completed: QmWVRuskY6YYdQhChAPtuC9cd1eQ8vVLb7wktximtjUdd9
+Build completed: QmPnb6UhZ1gevGtUe2rTmeVWFuSNxv5QoMek78Bk7L9qsa
 
 Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland
 
@@ -42,7 +42,7 @@ Queries (HTTP):     https://api.thegraph.com/subgraphs/name/anudit/tableland
 
 ## Optimism
 
-Build completed: QmTZjPH9C6JDVznYYBmxasZ7FeRTyzvmMWyxG9EY59GHKD
+Build completed: QmW96K48v2HLC2WEeetzNEoyRncEGqVaMp1bi6AbSJweTp
 
 Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland-optimism
 
@@ -52,7 +52,7 @@ Queries (HTTP):     https://api.thegraph.com/subgraphs/name/anudit/tableland-opt
 
 ## optimism-goerli
 
-Build completed: QmSLqXvdLHa8uStVZQfPqCY8D6rEn3jkFsXSQ3i4SqCRkz
+Build completed: QmbLj4j5mwVR4YLLintStojwHSW4QLZtpkBQD73Qow6n13
 
 Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland-optimism-goerli
 
@@ -62,7 +62,7 @@ Queries (HTTP):     https://api.thegraph.com/subgraphs/name/anudit/tableland-opt
 
 ## arbitrum-goerli
 
-Build completed: QmRHwhgJuj4sP33pwcCkSqdsFNxowW7VyGY7ym3Y5WopZi
+Build completed: QmcKxdES21hcLTAHUeJiFUzUQCsGJNVTeQzhhVeybCGg6a
 
 Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland-arbitrum-goerli
 
