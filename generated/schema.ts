@@ -208,13 +208,21 @@ export class History extends Entity {
     this.set("tablePointed", Value.fromString(value));
   }
 
-  get actionBy(): string {
+  get actionBy(): string | null {
     let value = this.get("actionBy");
-    return value!.toString();
+    if (!value || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toString();
+    }
   }
 
-  set actionBy(value: string) {
-    this.set("actionBy", Value.fromString(value));
+  set actionBy(value: string | null) {
+    if (!value) {
+      this.unset("actionBy");
+    } else {
+      this.set("actionBy", Value.fromString(<string>value));
+    }
   }
 }
 

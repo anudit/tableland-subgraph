@@ -7,7 +7,7 @@ Build completed: QmQeNRUHfZ3kSUaV4F1FLP3sxp4b6ADG17yFb8SUicLLiZ
 Deployed to https://thegraph.com/studio/subgraph/tableland-ethereum
 
 Subgraph endpoints:
-Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tableland-ethereum/v1.10
+Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tableland-ethereum/v1.11
 
 
 ## Ethereum Goerli
@@ -17,7 +17,7 @@ Build completed: QmcucXZ4e7CNaQTPE5bwev1DGXKKXJm2WEJGmudY2ateCu
 Deployed to https://thegraph.com/studio/subgraph/tableland-ethereum-goerli
 
 Subgraph endpoints:
-Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tableland-ethereum-goerli/v1.10
+Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tableland-ethereum-goerli/v1.11
 
 
 ## Polygon Mainnet
