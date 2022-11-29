@@ -14,16 +14,18 @@
     "prepare:opeth": "mustache config/opeth.json subgraph.template.yaml > subgraph.yaml",
     "prepare:op": "mustache config/op.json subgraph.template.yaml > subgraph.yaml",
     "prepare:arb": "mustache config/arb.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:arb-goerli": "mustache config/arb-goerli.json subgraph.template.yaml > subgraph.yaml",
     "prepare:eth": "mustache config/eth.json subgraph.template.yaml > subgraph.yaml",
     "prepare:goerli": "mustache config/goerli.json subgraph.template.yaml > subgraph.yaml",
     "deploy:poly": "pnpm prepare:poly && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-polygon",
     "deploy:mumbai": "pnpm prepare:mumbai && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland",
     "deploy:opeth": "pnpm prepare:opeth && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-optimism",
     "deploy:op": "pnpm prepare:op && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-optimism-goerli",
-    "deploy:arb": "pnpm prepare:arb && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-arbitrum-goerli",
+    "deploy:arb": "pnpm prepare:arb && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-arbitrum",
+    "deploy:arb-goerli": "pnpm prepare:arb-goerli && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-arbitrum-goerli",
     "deploy:eth": "pnpm prepare:eth && graph deploy --studio tableland-ethereum",
     "deploy:goerli": "pnpm prepare:goerli && graph deploy --studio tableland-ethereum-goerli",
-    "deploy:all": "pnpm deploy:poly && pnpm deploy:mumbai && pnpm deploy:opeth && pnpm deploy:op && pnpm deploy:arb && pnpm deploy:eth && pnpm deploy:goerli"
+    "deploy:all": "pnpm deploy:poly && pnpm deploy:mumbai && pnpm deploy:opeth && pnpm deploy:op && pnpm deploy:arb && pnpm deploy:arb-goerli && pnpm deploy:eth && pnpm deploy:goerli"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.36.1",

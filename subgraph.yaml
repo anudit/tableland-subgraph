@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: TablelandTables
-    network: goerli
+    network: arbitrum-goerli
     source:
-      address: "0xda8ea22d092307874f30a1f277d1388dca0ba97a"
+      address: "0x033f69e8d119205089Ab15D340F5b797732f646b"
       abi: TablelandTables
-      startBlock: 7176494
+      startBlock: 90408
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -29,7 +29,7 @@ dataSources:
           handler: handleRunSql
         - event: TransferTable(address,address,uint256)
           handler: handleTransferTable
-      callHandlers:
-        - function: burn(uint256)
-          handler: handleBurn
+      # callHandlers:
+      #   - function: burn(uint256)
+      #     handler: handleBurn
       file: ./src/mapping.ts

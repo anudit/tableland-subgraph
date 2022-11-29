@@ -60,9 +60,18 @@ Subgraph endpoints:
 Queries (HTTP):     https://api.thegraph.com/subgraphs/name/anudit/tableland-optimism-goerli
 
 
+## arbitrum-one
+
+Build completed: QmSGWJj5ZNRnQe7Dx3WtgA2dtWVPyEd71WiABZWWei4kei
+
+Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland-arbitrum
+
+Subgraph endpoints:
+Queries (HTTP):     https://api.thegraph.com/subgraphs/name/anudit/tableland-arbitrum
+
 ## arbitrum-goerli
 
-Build completed: QmcKxdES21hcLTAHUeJiFUzUQCsGJNVTeQzhhVeybCGg6a
+Build completed: QmT4dKzYUcSp8SCPbzPzgNjdj7v1m3RUidpcet2pGZ4BKX
 
 Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland-arbitrum-goerli
 
