@@ -58,7 +58,6 @@ export function handleSetController(event: SetController): void {
     entity.save();
   }
 
-
 }
 
 export function handleTransferTable(event: TransferTable): void {
@@ -78,6 +77,12 @@ export function handleTransferTable(event: TransferTable): void {
 }
 
 export function handleRunSql(event: RunSQL): void {
+
+  let user = User.load(event.transaction.from.toHexString())
+  if (!user) {
+    user = new User(event.transaction.from.toHexString())
+    user.save()
+  }
 
   let entity = Table.load(event.params.tableId.toString())
   if (entity) {

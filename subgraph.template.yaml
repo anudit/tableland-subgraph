@@ -29,7 +29,7 @@ dataSources:
           handler: handleRunSql
         - event: TransferTable(address,address,uint256)
           handler: handleTransferTable
-      callHandlers:
-        - function: burn(uint256)
-          handler: handleBurn
+      # callHandlers:
+      #   - function: burn(uint256)
+      #     handler: handleBurn
       file: ./src/mapping.ts
