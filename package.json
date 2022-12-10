@@ -28,7 +28,7 @@
     "deploy:all": "pnpm deploy:poly && pnpm deploy:mumbai && pnpm deploy:opeth && pnpm deploy:op && pnpm deploy:arb && pnpm deploy:arb-goerli && pnpm deploy:eth && pnpm deploy:goerli"
   },
   "dependencies": {
-    "@graphprotocol/graph-cli": "0.36.1",
+    "@graphprotocol/graph-cli": "0.37.1",
     "@graphprotocol/graph-ts": "0.29.0",
     "mustache": "^4.2.0"
   }
