@@ -32,12 +32,12 @@ Queries (HTTP):     https://api.thegraph.com/subgraphs/name/anudit/tableland-pol
 
 ## Polygon Mumbai Testnet
 
-Build completed: QmPnb6UhZ1gevGtUe2rTmeVWFuSNxv5QoMek78Bk7L9qsa
+Build completed: QmcZLiHyto62YR5ivCn5cTxMfxMTAQ7X3XjsVZvinF8W4i
 
-Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland
+Deployed to https://thegraph.com/studio/subgraph/tablescan-polygon-mumbai
 
 Subgraph endpoints:
-Queries (HTTP):     https://api.thegraph.com/subgraphs/name/anudit/tableland
+Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tablescan-polygon-mumbai/v1.12
 
 
 ## Optimism
@@ -52,31 +52,31 @@ Queries (HTTP):     https://api.thegraph.com/subgraphs/name/anudit/tableland-opt
 
 ## optimism-goerli
 
-Build completed: QmbLj4j5mwVR4YLLintStojwHSW4QLZtpkBQD73Qow6n13
+Build completed: QmfRuh2Z35fs3QusXAF5SkWacadPQ4se9tPeeBhhz5uqVY
 
-Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland-optimism-goerli
+Deployed to https://thegraph.com/studio/subgraph/tablescan-optimism-goerli
 
 Subgraph endpoints:
-Queries (HTTP):     https://api.thegraph.com/subgraphs/name/anudit/tableland-optimism-goerli
+Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tablescan-optimism-goerli/v1.12
 
 
 ## arbitrum-one
 
-Build completed: QmSGWJj5ZNRnQe7Dx3WtgA2dtWVPyEd71WiABZWWei4kei
+Build completed: QmePCkL1AMRgZDDM6679qe2WPJvvUuasXdiK6zXaRUVuAo
 
-Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland-arbitrum
+Deployed to https://thegraph.com/studio/subgraph/tablescan-arbitrum
 
 Subgraph endpoints:
-Queries (HTTP):     https://api.thegraph.com/subgraphs/name/anudit/tableland-arbitrum
+Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tablescan-arbitrum/v1.12
 
 ## arbitrum-goerli
 
-Build completed: QmT4dKzYUcSp8SCPbzPzgNjdj7v1m3RUidpcet2pGZ4BKX
+Build completed: Qmd2LTuHUTythTwSLe9K2mZdCU9p5xwFiaWP8ptvwV6DwB
 
-Deployed to https://thegraph.com/explorer/subgraph/anudit/tableland-arbitrum-goerli
+Deployed to https://thegraph.com/studio/subgraph/tablescan-arbitrum-goerli
 
 Subgraph endpoints:
-Queries (HTTP):     https://api.thegraph.com/subgraphs/name/anudit/tableland-arbitrum-goerli
+Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tablescan-arbitrum-goerli/v1.12
 
 ## Examples
 
