@@ -62,12 +62,12 @@ Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tablescan-optimis
 
 ## arbitrum-one
 
-Build completed: QmePCkL1AMRgZDDM6679qe2WPJvvUuasXdiK6zXaRUVuAo
+Build completed: QmQSuZjd6fbmnnmX91WX3ggkafmukKjrCjMgE8aLMjPvrW
 
 Deployed to https://thegraph.com/studio/subgraph/tablescan-arbitrum
 
 Subgraph endpoints:
-Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tablescan-arbitrum/v1.12
+Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tablescan-arbitrum/v1.13.2
 
 ## arbitrum-goerli
 

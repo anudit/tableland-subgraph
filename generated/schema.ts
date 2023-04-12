@@ -140,14 +140,6 @@ export class Table extends Entity {
       return value.toStringArray();
     }
   }
-
-  set history(value: Array<string> | null) {
-    if (!value) {
-      this.unset("history");
-    } else {
-      this.set("history", Value.fromStringArray(<Array<string>>value));
-    }
-  }
 }
 
 export class History extends Entity {
@@ -266,28 +258,12 @@ export class User extends Entity {
     }
   }
 
-  set tablesOwned(value: Array<string> | null) {
-    if (!value) {
-      this.unset("tablesOwned");
-    } else {
-      this.set("tablesOwned", Value.fromStringArray(<Array<string>>value));
-    }
-  }
-
   get tablesControlled(): Array<string> | null {
     let value = this.get("tablesControlled");
     if (!value || value.kind == ValueKind.NULL) {
       return null;
     } else {
       return value.toStringArray();
-    }
-  }
-
-  set tablesControlled(value: Array<string> | null) {
-    if (!value) {
-      this.unset("tablesControlled");
-    } else {
-      this.set("tablesControlled", Value.fromStringArray(<Array<string>>value));
     }
   }
 }

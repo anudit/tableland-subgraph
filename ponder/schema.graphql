@@ -1,0 +1,28 @@
+type Table @entity {
+  id: String!
+  owner: User!
+  tableId: BigInt!
+  name: String!
+  statement: String!
+  tokenURI: String!
+  created: BigInt!
+  controller: User!
+  txnHash: String!
+  historyCount: BigInt!
+  lastUpdated: BigInt!
+  history: [History!] @derivedFrom(field: "tablePointed")
+}
+
+type History @entity {
+  id: String!
+  statement: String!
+  time: BigInt!
+  tablePointed: Table!
+  actionBy: User
+}
+
+type User @entity {
+  id: String!
+  tablesOwned: [Table!] @derivedFrom(field: "owner")
+  tablesControlled: [Table!] @derivedFrom(field: "controller")
+}
