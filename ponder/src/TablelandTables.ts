@@ -1,6 +1,7 @@
 import { ponder } from "@/generated";
 
 ponder.on("TablelandTables:CreateTable", async ({ event, context }) => {
+  console.log({table: event.params.tableId})
   const { Table, User } = context.entities;
 
   const user = await User.upsert({
