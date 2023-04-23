@@ -14,7 +14,7 @@ export const config: PonderConfig = {
       address: "{{address}}",
       abi: "./abis/TablelandTables.json",
       startBlock: {{startBlock}},
-      maxBlockRange: 1000
+      maxBlockRange: {{maxBlockRange}}
     },
   ],
 };

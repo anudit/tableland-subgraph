@@ -1,5 +1,6 @@
 {
     "network": "filecoin-mainnet",
     "address": "0x59EF8Bf2d6c102B4c42AEf9189e1a9F0ABfD652d",
-    "startBlock": 2718630
+    "startBlock": 2718630,
+    "maxBlockRange": 1000
 }

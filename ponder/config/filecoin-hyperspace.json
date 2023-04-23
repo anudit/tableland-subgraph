@@ -1,5 +1,6 @@
 {
     "network": "filecoin-hyperspace",
     "address": "0x0B9737ab4B3e5303CB67dB031b509697e31c02d3",
-    "startBlock": 200531
+    "startBlock": 200531,
+    "maxBlockRange": 1000
 }
