@@ -10,10 +10,10 @@ export const config: PonderConfig = {
   contracts: [
     {
       name: "TablelandTables",
-      network: "sepolia",
-      address: "0xc50C62498448ACc8dBdE43DA77f8D5D2E2c7597D",
+      network: "{{network}}",
+      address: "{{address}}",
       abi: "./abis/TablelandTables.json",
-      startBlock: 3334951,
+      startBlock: {{startBlock}},
       maxBlockRange: 1000
     },
   ],
