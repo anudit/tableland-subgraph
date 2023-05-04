@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: TablelandTables
-    network: arbitrum-one
+    network: sepolia
     source:
-      address: "0x9aBd75E8640871A5a20d3B4eE6330a04c962aFfd"
+      address: "0xc50C62498448ACc8dBdE43DA77f8D5D2E2c7597D"
       abi: TablelandTables
-      startBlock: 29324626
+      startBlock: 3334951
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6

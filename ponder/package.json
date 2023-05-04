@@ -6,17 +6,20 @@
     "start:sepolia": "mustache ./config/sepolia.json ponder.config.template.ts > ponder.config.ts && pnpm start",
     "start:arbitrum-nova": "mustache ./config/arbitrum-nova.json ponder.config.template.ts > ponder.config.ts && pnpm start",
     "start:filecoin-hyperspace": "mustache ./config/filecoin-hyperspace.json ponder.config.template.ts > ponder.config.ts && pnpm start",
-    "start:filecoin-mainnet": "mustache ./config/filecoin-mainnet.json ponder.config.template.ts > ponder.config.ts && pnpm start",
+    "start:fm": "mustache ./config/filecoin-mainnet.json ponder.config.template.ts > ponder.config.ts && pnpm start",
     "codegen": "ponder codegen"
   },
   "dependencies": {
-    "@ponder/core": "^0.0.53"
+    "@ponder/core": "^0.0.55"
   },
   "devDependencies": {
-    "@types/node": "^18.16.0",
-    "abitype": "^0.8.0",
+    "@types/node": "^18.16.3",
+    "abitype": "^0.8.2",
     "mustache": "^4.2.0",
     "typescript": "^5.0.4",
-    "viem": "0.3.7"
+    "viem": "0.3.16"
+  },
+  "engines": {
+    "node": ">=18.x"
   }
 }

@@ -18,6 +18,7 @@
     "prepare:arb-nova": "mustache config/arb-nova.json subgraph.template.yaml > subgraph.yaml",
     "prepare:eth": "mustache config/eth.json subgraph.template.yaml > subgraph.yaml",
     "prepare:goerli": "mustache config/goerli.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:sepolia": "mustache config/sepolia.json subgraph.template.yaml > subgraph.yaml",
     "deploy:poly": "pnpm prepare:poly && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-polygon",
     "deploy:mumbai": "pnpm prepare:mumbai && graph deploy --studio tablescan-polygon-mumbai",
     "deploy:op": "pnpm prepare:op && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-optimism",
@@ -27,10 +28,11 @@
     "deploy:arb-nova": "pnpm prepare:arb-nova && graph deploy --product hosted-service anudit/tablescan-arbitrum-nova",
     "deploy:eth": "pnpm prepare:eth && graph deploy --studio tableland-ethereum",
     "deploy:goerli": "pnpm prepare:goerli && graph deploy --studio tableland-ethereum-goerli",
+    "deploy:sepolia": "pnpm prepare:sepolia && graph deploy --studio tablescan-ethereum-sepolia",
     "deploy:all": "pnpm deploy:poly && pnpm deploy:mumbai && pnpm deploy:op && pnpm deploy:op-goerli && pnpm deploy:arb && pnpm deploy:arb-goerli && pnpm deploy:eth && pnpm deploy:goerli"
   },
   "dependencies": {
-    "@graphprotocol/graph-cli": "0.46.1",
+    "@graphprotocol/graph-cli": "0.48.0",
     "@graphprotocol/graph-ts": "0.29.3",
     "mustache": "^4.2.0"
   }

@@ -2,16 +2,16 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@ponder/core':
-    specifier: ^0.0.53
-    version: 0.0.53(typescript@5.0.4)
+    specifier: ^0.0.55
+    version: 0.0.55(typescript@5.0.4)
 
 devDependencies:
   '@types/node':
-    specifier: ^18.16.0
-    version: 18.16.0
+    specifier: ^18.16.3
+    version: 18.16.3
   abitype:
-    specifier: ^0.8.0
-    version: 0.8.0(typescript@5.0.4)
+    specifier: ^0.8.2
+    version: 0.8.2(typescript@5.0.4)
   mustache:
     specifier: ^4.2.0
     version: 4.2.0
@@ -19,8 +19,8 @@ devDependencies:
     specifier: ^5.0.4
     version: 5.0.4
   viem:
-    specifier: 0.3.7
-    version: 0.3.7(typescript@5.0.4)
+    specifier: 0.3.16
+    version: 0.3.16(typescript@5.0.4)
 
 packages:
 
@@ -119,8 +119,8 @@ packages:
       fastq: 1.15.0
     dev: false
 
-  /@ponder/core@0.0.53(typescript@5.0.4):
-    resolution: {integrity: sha512-UpKoC3/kXUXfHc4Gyweg2dPQuhr3gFgsjTCmHoPvI6EDhQf0I41RYo5nKz+yi+GH3H5ifIuSSfL+oLo6KHlA2w==}
+  /@ponder/core@0.0.55(typescript@5.0.4):
+    resolution: {integrity: sha512-ndIqKxTffAJ8MkIBCn0SwcZL2D2iAJQ7Rgd0w/0mn4yziQQ8RQzTknp2SKDaogWCdFWavguDGmT63o9p/HFnUw==}
     hasBin: true
     dependencies:
       '@babel/code-frame': 7.21.4
@@ -146,7 +146,7 @@ packages:
       prettier: 2.8.8
       react: 17.0.2
       stacktrace-parser: 0.1.10
-      tsc-alias: 1.8.5
+      tsc-alias: 1.8.6
       viem: 0.1.8(typescript@5.0.4)
     transitivePeerDependencies:
       - '@types/react'
@@ -178,8 +178,8 @@ packages:
       '@scure/base': 1.1.1
     dev: true
 
-  /@types/node@18.16.0:
-    resolution: {integrity: sha512-BsAaKhB+7X+H4GnSjGhJG9Qi8Tw+inU9nJDwmD5CgOmBLEI6ArdhikpLX7DjbjDRDTbqZzU2LSQNZg8WGPiSZQ==}
+  /@types/node@18.16.3:
+    resolution: {integrity: sha512-OPs5WnnT1xkCBiuQrZA4+YAV4HEJejmHneyraIaxsbev5yCEr6KMwINNFP9wQeFIw8FWcoTqF3vQsa5CDaI+8Q==}
     dev: true
 
   /@types/yoga-layout@1.9.2:
@@ -232,10 +232,10 @@ packages:
       typescript: 5.0.4
     dev: true
 
-  /abitype@0.8.0(typescript@5.0.4):
-    resolution: {integrity: sha512-QqBuwc2trtaNd/kp4k0dSjVu3OQIYRAB4ww4LCPwfSECXcCGTD3imYovNYNjx0SyN3OHV0XUOzUVwnXP1kLsVQ==}
+  /abitype@0.8.2(typescript@5.0.4):
+    resolution: {integrity: sha512-B1ViNMGpfx/qjVQi0RTc2HEFHuR9uoCoTEkwELT5Y7pBPtBbctYijz9BK6+Kd0hQ3S70FhYTO2dWWk0QNUEXMA==}
     peerDependencies:
-      typescript: '>=4.9.4'
+      typescript: '>=5.0.4'
       zod: ^3 >=3.19.1
     peerDependenciesMeta:
       zod:
@@ -1894,8 +1894,8 @@ packages:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: false
 
-  /tsc-alias@1.8.5:
-    resolution: {integrity: sha512-Y3ka0olwSRdbHPyX5kXhYY2aoBKuT53DFdeY+PpQUR4hg5M/b8eIRmC8dL4FBdd0wT366iWc6iDUUGe6QwI7mg==}
+  /tsc-alias@1.8.6:
+    resolution: {integrity: sha512-vq+i6VpE83IeMsSJVcFN03ZBofADhr8/gIJXjxpbnTRfN/MFXy0+SBaKG2o7p95QqXBGkeG98HYz3IkOOveFbg==}
     hasBin: true
     dependencies:
       chokidar: 3.5.3
@@ -1979,8 +1979,8 @@ packages:
       - zod
     dev: false
 
-  /viem@0.3.7(typescript@5.0.4):
-    resolution: {integrity: sha512-C+GolRIu0HErjv9Z+sqdBympsbIS1qxKfjBE4xa8mwX3rCY++5SIPPRNobVXuAF5w7B+8jDgJMKinT1gmBvR3A==}
+  /viem@0.3.16(typescript@5.0.4):
+    resolution: {integrity: sha512-Btfd6AfUbddM4hxl1LPtiaGcIJA8rG2WM1Q4VYf4AETvF8fTogDOJ08roRaOy+ep32+pKctyVOmeyE14Uhfylg==}
     dependencies:
       '@adraffy/ens-normalize': 1.9.0
       '@noble/curves': 0.9.0

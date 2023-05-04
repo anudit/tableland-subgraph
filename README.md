@@ -19,6 +19,14 @@ Deployed to https://thegraph.com/studio/subgraph/tableland-ethereum-goerli
 Subgraph endpoints:
 Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tableland-ethereum-goerli/v1.12
 
+## Ethereum Sepolia
+
+Build completed: QmZTnMaGFtLLyR63GTVYGcTMjEbUagZodiCV9zAD1xk4T5
+
+Deployed to https://thegraph.com/studio/subgraph/tablescan-ethereum-sepolia
+
+Subgraph endpoints:
+Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tablescan-ethereum-sepolia/v1.12
 
 ## Polygon Mainnet
 
