@@ -19,6 +19,8 @@
     "prepare:eth": "mustache config/eth.json subgraph.template.yaml > subgraph.yaml",
     "prepare:goerli": "mustache config/goerli.json subgraph.template.yaml > subgraph.yaml",
     "prepare:sepolia": "mustache config/sepolia.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:filecoin-testnet": "mustache config/filecoin-testnet.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:filecoin-mainnet": "mustache config/filecoin-mainnet.json subgraph.template.yaml > subgraph.yaml",
     "deploy:poly": "pnpm prepare:poly && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-polygon",
     "deploy:mumbai": "pnpm prepare:mumbai && graph deploy --studio tablescan-polygon-mumbai",
     "deploy:op": "pnpm prepare:op && graph deploy --node https://api.thegraph.com/deploy/ anudit/tableland-optimism",

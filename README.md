@@ -86,11 +86,21 @@ Deployed to https://thegraph.com/studio/subgraph/tablescan-arbitrum-goerli
 Subgraph endpoints:
 Queries (HTTP):     https://api.studio.thegraph.com/query/1649/tablescan-arbitrum-goerli/v1.12
 
+## Filecoin Mainnet
+
+Subgraph endpoints:
+Queries (HTTP): https://subgraph.laconic.com/subgraphs/name/anudit/tableland
+
+## Filecoin Testnet
+
+Subgraph endpoints:
+Queries (HTTP): 
+
 ## Examples
 
 ```gql
 {
-  tables(where: {name: "dtest_80001_2355"}) {
+  tables(first: 100) {
     name
     owner
     tableId
