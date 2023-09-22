@@ -96,6 +96,7 @@ Queries (HTTP): https://subgraph.laconic.com/subgraphs/name/anudit/tableland
 Subgraph endpoints:
 Queries (HTTP): 
 
+
 ## Examples
 
 ```gql
